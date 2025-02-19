@@ -62,9 +62,12 @@ nav ul li a:hover {
 h1 {
     background-color: #007BFF;
     color: white;
-    padding: 20px;
-    margin: 0;
-    font-size: 28px;
+    text-align: center;
+    padding: 30px;
+    margin: 0 auto;
+    font-size: 30px;
+    width: 50%; 
+    border-radius: 10px; 
 }
 
 p {
@@ -98,3 +101,4 @@ button:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
+
