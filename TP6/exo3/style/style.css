@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding-top: 80px;
+}
+
+nav {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #62aaf6;
+    padding: 10px 20px;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a img {
+    height: 50px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a button {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #000000;
+    border-radius: 50px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.calendrier {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #000;
+}
+
+.calendrier caption {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-bottom: 2px solid #000;
+}
+
+th {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    border: 1px solid black;
+}
+
+.header {
+    background-color: #7ab648;
+}
+
+.weekend-header {
+    background-color: #c7e3a0;
+}
+
+td {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.weekend {
+    background-color: #e0f2b6;
+}
+
+.empty {
+    background-color: #f9f9f9;
+    border: none;
+    height: 30px;
+}
+
+.calendrier tr:last-child td {
+    height: 40px;
+}
+
+.navigation-exercices {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.navigation-exercices a button {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 24px;
+    background-color: #007BFF;
+    border-radius: 50px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin: 10px;
+}
+
+.navigation-exercices a button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
