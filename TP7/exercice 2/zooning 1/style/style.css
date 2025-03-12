@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    overflow: hidden; 
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: table;
+}
+
+.haut {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    height: 15vh;
+    display: table;
+}
+
+.conteneur {
+    width: 100%;
+    height: 85vh;
+    display: table;
+}
+
+.gauche {
+    background-color: blue;
+    color: white;
+    width: 20%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.milieu {
+    background-color: lightgreen;
+    width: 80%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: top;
+    padding: 10px;
+}

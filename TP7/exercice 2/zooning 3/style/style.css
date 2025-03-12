@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.contenu {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gauche {
+    background-color: teal;
+}
+
+.droite {
+    background-color: purple;
+}
+
+.bas {
+    background-color: gold;
+    padding: 50px;
+    font-weight: bold;
+}
