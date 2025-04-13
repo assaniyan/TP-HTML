@@ -1,0 +1,119 @@
+nav {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    background-color: #62aaf6;
+    padding: 10px 20px;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    justify-content: center;
+}
+
+nav img {
+    height: 50px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #0056b3;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #003d80;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.image-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image-section img {
+    max-width: 100px; 
+    height: auto; 
+    border-radius: 5px;
+    margin: 0 auto; 
+}
+
+.liste-cours, .liste-tp {
+    margin-bottom: 30px;
+}
+
+.liste-cours h2, .liste-tp h2 {
+    font-size: 20px;
+    border-bottom: 2px solid #007BFF;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.liste-cours ul, .liste-tp ul {
+    list-style: none;
+    padding: 0;
+}
+
+.liste-cours ul li, .liste-tp ul li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.liste-cours ul li:hover, .liste-tp ul li:hover {
+    background-color: #f0f0f0;
+}
+
+.liste-cours ul li a, .liste-tp ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    display: block;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    padding-top: 70px; 
+}

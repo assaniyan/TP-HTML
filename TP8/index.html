@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcul de devis</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="../../../index.html">
+      <img src="../../../img/home.png" alt="Logo">
+    </a>
+    <ul>
+      <li><a href="../../../TP3/TP3.html">TP3</a></li>
+      <li><a href="../../../TP4/TP-4.html">TP4</a></li>
+      <li><a href="../../../TP5/docs/index.html">TP5</a></li>
+      <li><a href="../../../TP6/index.html">TP6</a></li>
+      <li><a href="../../../TP7/index.html">TP7</a></li>
+      <li><a href="../../../TP8/docs/index.html">TP8</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Application de calcul de devis pour dalle en béton</h1>
+  </header>
+
+  <div class="container">
+    <h2>Formulaire de saisie</h2>
+    <form id="formDevis">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" required pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s\-]+">
+
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" required pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s\-]+">
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" required>
+
+      <label for="telephone">Téléphone :</label>
+      <input type="tel" id="telephone" required pattern="[0-9]+">
+
+      <label for="epaisseur">Épaisseur de la dalle (cm) :</label>
+      <input type="number" id="epaisseur" min="15" max="35" required>
+
+      <label for="surface">Surface de la dalle (m²) :</label>
+      <input type="number" id="surface" min="1" required>
+
+      <div class="button-container">
+        <button type="button" onclick="calculerDevis()">Obtenir le devis</button>
+      </div>
+    </form>
+
+    <div id="devis" style="display: none;">
+      <div class="devis-header">
+        <h2>Devis pour dalle en béton</h2>
+        <div class="info-devis">
+          <p><strong>N° Devis :</strong> <span id="infoNumeroDevis"></span></p>
+          <p><strong>Date :</strong> <span id="infoDateDevis"></span></p>
+          <p><strong>Validité :</strong> <span id="infoValidite"></span></p>
+        </div>
+      </div>
+
+      <div class="info-client">
+        <h3>Informations du client</h3>
+        <p><strong>Nom :</strong> <span id="infoNom"></span></p>
+        <p><strong>Prénom :</strong> <span id="infoPrenom"></span></p>
+        <p><strong>Email :</strong> <span id="infoEmail"></span></p>
+        <p><strong>Téléphone :</strong> <span id="infoTelephone"></span></p>
+      </div>
+
+      <div class="info-calcul">
+        <h3>Détails du calcul</h3>
+        <table>
+          <tr>
+            <th>Volume nécessaire (m³)</th>
+            <th>Volume final livré (m³)</th>
+            <th>Quantité de ciment (tonnes)</th>
+            <th>Nombre de camions (9m³)</th>
+          </tr>
+          <tr>
+            <td id="infoVolumeCalcule"></td>
+            <td id="infoVolumeFinal"></td>
+            <td id="infoCiment"></td>
+            <td id="infoCamions"></td>
+          </tr>
+        </table>
+
+        <div class="tarifs">
+          <h4>Récapitulatif des tarifs</h4>
+          <p><strong>Prix du béton HT :</strong> <span id="infoPrixBetonHT"></span> €</p>
+          <p><strong>Prix du transport HT :</strong> <span id="infoPrixTransportHT"></span> €</p>
+          <p><strong>Sous-total HT :</strong> <span id="infoTotalHT"></span> €</p>
+          <p><strong>TVA (20%) :</strong> <span id="infoTVA"></span> €</p>
+          <p><strong>Total TTC :</strong> <span id="infoTotalTTC"></span> €</p>
+        </div>
+      </div>
+
+      <button onclick="window.print()">Imprimer le devis</button>
+    </div>
+  </div>
+    <script src="../script.js"></script>
+</body>
+</html>
